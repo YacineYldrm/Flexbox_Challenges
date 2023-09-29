@@ -1,0 +1,156 @@
+/* ============================================================
+                            GENERALS
+
+
+Font-family:"Raleway",
+Headerhöhe:76px,
+Logofarbe: #666,
+Logofarbe in hover: #333,
+Menüfarbe: #333,
+und Menüfarbe in hover: #337ab7.
+=============================================================== */
+
+@font-face {
+    font-family: "raleway" ;
+    src: url(./../font/Raleway-VariableFont_wght.ttf);
+}
+
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html
+{
+    --color-menu: #333;
+    --color-menu-hover: #337ab7;
+    --color-logo: #666;
+    font-family: "raleway";
+}
+
+header
+{
+    height: 4.75rem;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+nav
+{
+    padding: 10px 186px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, ul, li, a
+{
+    text-decoration: none;
+    color: var(--color-menu);
+    font-size: 0.8rem;
+}
+
+.logo
+{
+    color: var(--color-logo);
+    font-size: 1.6rem;
+    padding: 11px 0px 13px 15px;
+    text-wrap: nowrap;
+}
+
+ul
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 11px 57px 13px 0px;
+}
+
+ul > li
+{
+    list-style: none;
+    text-wrap: nowrap;
+}
+
+.logo:hover, ul, li, a:hover
+{
+    color: var(--color-menu-hover);
+}
+
+/* ===============================================================
+                            hero section
+==================================================================*/
+
+.hero_body
+{
+    background: url(https://s3-alpha-sig.figma.com/img/0c35/f846/38e75180597332d03d601c4abfcc1940?Expires=1696809600&Signature=gWKj-PiNgtnrHg0M1aVc0aQO7WS~lQKUas1tA4sNpOIkCZIXsxbapBh2UZZOsSsNLZPv1W56iNSsAByRC6nj1QYSxAMo2KFxPPTlJjds8EntBJEIJHWq3DR3TkfmCi8p7AWbov0VBeV4-vd2mMmGrR1EiXhIwEExogrfbA8Ytrp0FOf-0N4zeCKpuP76Hhz1JyxuC5Bwkz2BtPVLUA2kGRSeRulGTE2ae-vQjxSyQJ5mSZdBDLZpOa-CXbH3oyKDF~IF2lIouV-UMXgoKO5Dcn~7o4DkXFWB1XuZ3i-e2s0AIKGMrp6MVhVTpqxmlxMNTXXnHkOBqT-mfdf~kaNIwA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4) no-repeat center / cover;
+    /* background-position: bottom; */
+    width: 100vw;
+    height: 90vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+h1
+{
+    font-size: 3.75rem;
+    font-weight: 100;
+    /* margin-bottom: 25px; */
+    text-wrap: none;
+}
+
+h2
+{
+    font-size: 0.875rem;
+    font-weight: 100;
+    /* margin-bottom: 50px; */
+}
+
+div
+{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+div a
+{
+    padding: 15px 60px;
+    font-size: 0.75rem;
+    color: #FFF;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+div a:nth-child(1)
+{
+    border: 2px solid #745CF9;
+    background: #745CF9;
+}
+
+div a:nth-child(2)
+{
+    border: 2px solid #FFF;
+    padding-inline: 42px ;
+}
+
+div a:nth-child(1):hover
+{
+    background-color: #4a3c9e;
+    border: 2px solid #4a3c9e;
+    color: #ffffff;
+    font-weight: 200;
+    transition: 300ms ease-in-out;
+}
+
+div a:nth-child(2):hover
+{
+    background-color: #FFF;
+    color: #000000;
+    font-weight: 200;
+    transition: 300ms ease-in-out;
+}

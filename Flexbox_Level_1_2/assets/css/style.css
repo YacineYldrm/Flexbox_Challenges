@@ -1,0 +1,43 @@
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+header
+{
+    background: url(https://images.unsplash.com/photo-1694684677360-5cb0841ec36e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80) no-repeat center / cover;
+    height: 100vh;
+    font-family: sans-serif;
+    color: white;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgba(70, 70, 70, 0.465);
+    padding: 20px 50px;
+}
+
+h1
+{
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.nav_tags
+{
+    display: flex;
+    gap: 40px;
+    padding-right: 80px;
+}
+
+.nav_tags a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
